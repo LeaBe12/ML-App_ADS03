@@ -1,0 +1,68 @@
+correct_dependency_ids: {}
+scheduled_tasks: null
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/files.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Rechner}
+package_name: Vorhersage_Erfolg_der_Bewerber_innen
+allow_embedding: false
+name: Clone of Vorhersage Erfolg der Bewerber:innen
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null,
+  server_persist: true}
+metadata: {logo_img: 'asset:HC_Logo_Icon Kopie.svg', title: 'Vorhersage: Erfolg der
+    Bewerber:innen', description: 'ML-Modell um Erfolgswahrscheinlichkeit von Bewerber:innen
+    vorherzusagen'}
+startup_form: null
+db_schema:
+  abschluss:
+    client: search
+    server: search
+    columns:
+    - name: Abschluss
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: Abschluss
+  status:
+    client: search
+    server: search
+    columns:
+    - name: Status
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: Status
+  hsu:
+    client: search
+    server: search
+    columns:
+    - name: HSU
+      admin_ui: {order: 0, width: 200}
+      type: string
+    title: HSU
+  geschlecht:
+    client: search
+    server: search
+    columns:
+    - name: Geschlecht
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: Geschlecht
+  files:
+    client: none
+    server: full
+    columns:
+    - name: path
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: file
+      admin_ui: {order: 1, width: 200}
+      type: media
+    - name: file_version
+      admin_ui: {order: 2, width: 200}
+      type: string
+    title: Files
+uplink_visible: true
