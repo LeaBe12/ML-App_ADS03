@@ -2,8 +2,9 @@ unique_ids:
   forms:
     Rechner: M4U4FSHVLYPJIYDNJIGPZSECDCMZXE43
   modules: {}
-  server_modules: {}
+  server_modules:
+    MLModel: '1713084387769205936538538.93622'
   assets:
-    HC_Logo_Icon Kopie.svg: '1712902647863164746823246.21103'
+    HC_Logo.svg: '1712902647863164746823246.21103'
     standard-page.html: R4NEJSPQU66ZIQAUB6GKO3BAWZCPUUE6
     theme.css: TBRZUU6TTM3NYFKPCIGWY63P22FGCS5M
