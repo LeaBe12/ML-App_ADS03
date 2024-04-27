@@ -8,5 +8,5 @@ Client Code: Enthält das äußere Erscheinungsbild der WebApp (Drop-down-Option
 
 Server Code: Enthält den Machine Learning Code
 
-Theme: Enthält z. B. den html Code und das Logo
+Theme: Enthält z. B. den HTML-Code und das Logo
 
