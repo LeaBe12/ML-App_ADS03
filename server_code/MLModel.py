@@ -11,8 +11,6 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 import anvil.tables.query as q
 
-# Anvil Server Verbindung
-#anvil.server.connect("server_VQTG5MAUULXOWPATTKA2ABMJ-VMZZ6MCKCIM5UGDW")
 
 @anvil.server.callable
 def return_data_from_excel():
